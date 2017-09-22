@@ -188,12 +188,12 @@ class docker(
     validate_re($dm_fs, '^(ext4|xfs)$', 'Only ext4 and xfs are supported currently for dm_fs.')
   }
 
-  class { '::docker::install': } ->
-  class { '::docker::config': } ~>
+  class { '::docker::install': }
+  class { '::docker::config': }
   class { '::docker::service': }
-  contain '::docker::install'
-  contain '::docker::config'
-  contain '::docker::service'
+  include ::docker::install
+  include ::docker::config
+  include ::docker::service
 
   # Only bother trying extra docker stuff after docker has been installed,
   # and is running.

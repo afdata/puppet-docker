@@ -1,12 +1,12 @@
 {
-	"name": "cristifalcas-docker",
-	"version": "5.5.0",
-	"author": "Cristian Falcas",
+	"name": "afdata-docker",
+	"version": "6.0.0",
+	"author": "Patrick Emer",
 	"summary": "Module for installing and managing docker",
 	"license": "Apache-2.0",
-	"source": "https://github.com/cristifalcas/puppet-docker.git",
-	"project_page": "https://github.com/cristifalcas/puppet-docker",
-	"issues_url": "https://github.com/cristifalcas/puppet-docker/issues",
+	"source": "https://github.com/afdata/puppet-docker.git",
+	"project_page": "https://github.com/afdata/puppet-docker",
+	"issues_url": "https://github.com/afdata/puppet-docker/issues",
 	"tags": [ "DOCKER"
 	],
 	"operatingsystem_support": [{

@@ -11,6 +11,7 @@ class docker::config {
     ensure  => 'file',
     force   => true,
     content => template("${module_name}/etc/sysconfig/docker-storage.erb"),
+    require => Service['docker-storage-setup']
   }
 
   file { '/etc/sysconfig/docker-network':

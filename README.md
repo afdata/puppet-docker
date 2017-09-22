@@ -1,10 +1,12 @@
 # docker
-[![Build Status](https://travis-ci.org/cristifalcas/puppet-docker.png?branch=master)](https://travis-ci.org/cristifalcas/puppet-docker)
+[![Build Status](https://travis-ci.org/afdata/puppet-docker.png?branch=master)](https://travis-ci.org/afdata/puppet-docker)
 
 Puppet module for installing, configuring and managing [Docker](https://github.com/dotcloud/docker)
 
-This module was forked from https://github.com/garethr/garethr-docker.git and modified to only work with
+This module was forked from https://github.com/cristifalcas/puppet-docker and modified to only work with
 the docker package from centos.
+
+As well i fixed the dependencies for the thin-lvm setup with docker.
 
 ## Support
 
@@ -137,4 +139,3 @@ docker::registry_auth::registries:
     password: 'secret'
     email: 'user1@example.io'
 ```
-
